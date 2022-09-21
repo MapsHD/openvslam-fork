@@ -233,4 +233,7 @@ RUN set -x && \
 
 
 WORKDIR /openvslam/
+
+RUN wget https://github.com/MapsHD/openvslam-fork/releases/download/v0.1/orb_vocab.dbow2
+
 ENTRYPOINT ["/bin/bash"]
