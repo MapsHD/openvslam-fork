@@ -109,7 +109,7 @@ ENV g2o_DIR=${CMAKE_INSTALL_PREFIX}/lib/cmake/g2o
 ARG OPENCV_VERSION=4.1.0
 ARG OPENCV_CONTRIB_VERSION=4.0.1
 WORKDIR /tmp
-ADD patch.zip /tmp/patch.zip
+RUN wget https://github.com/MapsHD/openvslam-fork/releases/download/v0.1/patch.zip
 RUN set -x && \
   wget -q https://github.com/opencv/opencv_contrib/archive/${OPENCV_CONTRIB_VERSION}.zip && \
   unzip -q ${OPENCV_CONTRIB_VERSION}.zip -d . && \
