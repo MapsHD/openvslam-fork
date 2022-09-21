@@ -1,9 +1,17 @@
 
 > *NOTE:* This is a fork of [xdspacelab/openvslam](https://github.com/xdspacelab/openvslam). The original repository is no longer available. Please read the [official statement of termination](https://github.com/xdspacelab/openvslam/wiki/Termination-of-the-release) carefully and understand it before using this. The similarities with ORB_SLAM2 in the original version are not removed. We share this code on GPLv3 License as in [ORB_SLAM2](https://github.com/raulmur/ORB_SLAM2/blob/master/LICENSE.txt).
 
+# Clone repo
+
+```
+git clone https://github.com/MapsHD/openvslam-fork.git
+```
+
 # Prepare dataset
 
-dataset directory structure:
+Download files from [Release](https://github.com/MapsHD/openvslam-fork/releases)
+
+Dataset directory structure:
 
 - dataset
  - images/
