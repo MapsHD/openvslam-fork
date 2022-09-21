@@ -13,10 +13,11 @@ Download files from [Release](https://github.com/MapsHD/openvslam-fork/releases)
 
 Dataset directory structure:
 
+```
 - dataset
- - images/
- - config_openvslam.yaml
-
+  - images/
+  - config_openvslam.yaml
+```
 
 # Build container
 
