@@ -39,6 +39,10 @@ cat /dataset/map.json
 
 ## Run on Windows
 
+1. Start XLaunch
+
+2. Using WSL terminal:
+
 ```
 docker run --rm -it -e DISPLAY=host.docker.internal:0.0 -e LIBGL_ALWAYS_INDIRECT=0 --volume /mnt/c/on_the_host/data/path/to/dataset:/dataset:rw vslam
 ./build/run_image_slam -v /openvslam/orb_vocab.dbow2 -i /dataset/images/ -c /dataset/config_openvslam.yaml --no-sleep --auto-term --map-db /dataset/map.msg
