@@ -44,6 +44,7 @@ cat /dataset/map.json
 2. Using WSL terminal:
 
 ```
+export DISPLAY=127.0.0.1:0.0
 docker run --rm -it -e DISPLAY=host.docker.internal:0.0 -e LIBGL_ALWAYS_INDIRECT=0 --volume /mnt/c/on_the_host/data/path/to/dataset:/dataset:rw vslam
 export DISPLAY=host.docker.internal:0.0
 ./build/run_image_slam -v /openvslam/orb_vocab.dbow2 -i /dataset/images/ -c /dataset/config_openvslam.yaml --no-sleep --auto-term --map-db /dataset/map.msg
